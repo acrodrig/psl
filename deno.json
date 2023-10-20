@@ -1,0 +1,15 @@
+{
+  "fmt": {
+    "lineWidth": 180,
+    "include": ["src/", "test/"]
+  },
+  "imports": {
+    "punycode/": "https://deno.land/x/punycode@v2.1.1/",
+    "std/": "https://deno.land/std@0.204.0/"
+  },
+  "tasks": {
+    "check": "deno check **/*.ts && deno lint && deno fmt --check",
+    "release": "release",
+    "test": "deno test -A"
+  }
+}
